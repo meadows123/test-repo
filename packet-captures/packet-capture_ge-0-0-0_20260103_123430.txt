@@ -1,0 +1,17 @@
+content:
+verbose output suppressed, use <detail> or <extensive> for full protocol decode
+    Address resolution is ON. Use <no-resolve> to avoid any reverse lookup delay.
+    Address resolution timeout is 4s.
+    Listening on ge-0/0/0, capture size 96 bytes
+  
+    Reverse lookup for 192.168.1.125 failed (check DNS reachability).
+    Other reverse lookup failures will not be reported.
+    Use <no-resolve> to avoid reverse lookups on IP addresses.
+  
+    12:34:33.549024 Out IP truncated-ip - 96 bytes missing! 192.168.1.125.ssh > 192.168.1.181.52028: P 4258008382:4258008498(116) ack 4150591171 win 65535
+    12:34:33.549574 Out IP truncated-ip - 96 bytes missing! 192.168.1.125.ssh > 192.168.1.181.52028: P 116:232(116) ack 1 win 65535
+    12:34:33.549917 Out IP truncated-ip - 56 bytes missing! 192.168.1.125.ssh > 192.168.1.181.52028: P 232:308(76) ack 1 win 65535
+    12:34:33.550152 Out IP truncated-ip - 64 bytes missing! 192.168.1.125.ssh > 192.168.1.181.52028: P 308:392(84) ack 1 win 65535
+    12:34:33.554400  In IP 192.168.1.181.52028 > 192.168.1.125.ssh: . ack 392 win 253
+
+commit message: Add packet capture from vsrx - Interface: ge-0/0/0, Filter: none
